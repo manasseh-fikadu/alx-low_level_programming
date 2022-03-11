@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+#include <stdio.h>
+
+/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c == 'e' || c == 'q')
+		{
+			continue;
+		}
+		putchar(c);
+	}
+	putchar('\n');
+
+	return (0);
+}
